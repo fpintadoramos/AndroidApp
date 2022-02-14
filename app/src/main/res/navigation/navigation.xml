@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/pantallaInicio">
+
+    <fragment
+        android:id="@+id/pantallaInicio"
+        android:name="com.example.tareas.screens.PantallaInicio"
+        android:label="fragment_pantalla_inicio"
+        tools:layout="@layout/fragment_pantalla_inicio" >
+        <action
+            android:id="@+id/action_pantallaInicio_to_tareas"
+            app:destination="@id/tareas" />
+    </fragment>
+    <fragment
+        android:id="@+id/tareas"
+        android:name="com.example.tareas.screens.Tareas"
+        android:label="treas_fragment"
+        tools:layout="@layout/treas_fragment" />
+    <fragment
+        android:id="@+id/ayudaFragment"
+        android:name="com.example.tareas.AyudaFragment"
+        android:label="fragment_ayuda"
+        tools:layout="@layout/fragment_ayuda" />
+    <fragment
+        android:id="@+id/partnersFragment"
+        android:name="com.example.tareas.PartnersFragment"
+        android:label="fragment_partners"
+        tools:layout="@layout/fragment_partners" />
+</navigation>
